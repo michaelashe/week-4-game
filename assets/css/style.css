@@ -1,0 +1,63 @@
+body {
+	background: url("../images/background3.jpg")
+}
+
+h1 {
+	
+	background: deepskyblue;
+    font-size: 43px;
+    font-family: sans-serif;
+    margin-right: 729px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+#message {
+	width: 530px;
+    font-size: 27px;
+    color: white;
+    margin-right: 0px;
+    font-family: Arial, sans-serif;
+    background: orchid;
+    margin-left: 20px;
+}
+
+#randomNumber {
+	font-size: 90px;
+    background: dodgerblue;
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 215px;
+    float:left;
+}
+
+#winsLosses {
+	font-size: 45px;
+    background: lavender;
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+
+}
+
+#crystals {
+	clear: both;
+}
+
+.images {
+	height: 150px;
+    float: left;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#scoreText {
+	clear: both;
+    font-size: 35px;
+    background: fuchsia;
+    width: 366px;
+    margin-top: 200px;
+    margin-left: 20px;
+
+}
