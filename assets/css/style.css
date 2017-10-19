@@ -1,5 +1,5 @@
 body {
-	background: url("../images/background3.jpg")
+background: url("../images/background3.jpg")
 }
 
 h1 {
@@ -57,8 +57,12 @@ h1 {
 	clear: both;
     font-size: 35px;
     background: fuchsia;
-    width: 366px;
+    width: 334px;
     margin-top: 200px;
     margin-left: 20px;
 
+}
+
+#random {
+	color: floralwhite;
 }
