@@ -12,30 +12,30 @@ var blueCrystal = [];
 var brownCrystal = [];
 var pureCrystal = [];
 var purpleCrystal = [];
+var randomNumber = 0;
 
 function reset() {
-	var minNumber = 19;
-	var maxNumber = 120;
+	//minNumber = 19;
+	//maxNumber = 120;
 	playerScore = 0;
-	var crystalArray = []
-	var blueCrystal = [];
-	var brownCrystal = [];
-	var pureCrystal = [];
-	var purpleCrystal = [];
-	var randomNumber = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
-		document.querySelector("#random").innerHTML = randomNumber;
-		console.log(randomNumber);
-	var crystalArray = Array.from({length: 4}, () => Math.floor(Math.random() * (12 - 1 + 1) + 1));
-		console.log(crystalArray);
-};
+	crystalArray = []
+	blueCrystal = [];
+	brownCrystal = [];
+	pureCrystal = [];
+	purpleCrystal = [];
+	randomNumber = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
+	$("#random").text(randomNumber);
+	crystalArray = Array.from({length: 4}, () => Math.floor(Math.random() * (12 - 1 + 1) + 1));
+	console.log(crystalArray);
+	};
 
 //Random number generator with value between 19 and 120//
-var randomNumber = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
-	document.querySelector("#random").innerHTML = randomNumber;
+randomNumber = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
+	$("#random").text(randomNumber);
 	console.log(randomNumber);
 
 //All crystals generate random value for round being played//
-var crystalArray = Array.from({length: 4}, () => Math.floor(Math.random() * (12 - 1 + 1) + 1));
+crystalArray = Array.from({length: 4}, () => Math.floor(Math.random() * (12 - 1 + 1) + 1));
 	console.log(crystalArray);
 
 $("#blue").on("click", function() {
@@ -67,22 +67,21 @@ $("#purple").on("click", function() {
 	$("#score").text(playerScore += purpleCrystal);
 	console.log(purpleCrystal);
 	checkScore();
-	
 });
 
 function checkScore() {
 	if (playerScore == randomNumber) {
-		alert("You WON!!");
+		console.log("You WON!!");
 		wins ++;
 		$("#wins").text(wins);
-		// reset();
+		reset();
 		
 		
 	}if (playerScore > randomNumber) {
-		alert("You LOST!!");
+		console.log("You LOST!!");
 		losses ++;
 		$("#losses").text(losses);
-		//reset()
+		reset();
 	};
 };
 });
